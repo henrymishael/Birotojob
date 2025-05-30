@@ -41,7 +41,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href='/contact'
+                  href='https://api.whatsapp.com/send/?phone=2349081893000&text&type=phone_number&app_absent=0'
                   className='text-muted-foreground hover:text-foreground transition-colors'
                 >
                   Contact
@@ -90,7 +90,7 @@ export default function Footer() {
             <h3 className='text-lg font-medium'>Contact</h3>
             <ul className='space-y-2 text-sm'>
               <li className='text-muted-foreground'>
-                HFP Shopping Mall
+                HFP Shopping Complex
                 <br />
                 Ajah, Lagos, Nigeria.
               </li>

@@ -432,7 +432,7 @@ export const allCourses = [
     image: "/images/ICT.jpg",
     duration: "8 weeks",
     level: "Beginner",
-    price: "₦120,000",
+    price: "₦175,000",
     startDate: "May 5, 2025",
     instructor: "Akpan Michael",
     topics: [

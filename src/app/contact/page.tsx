@@ -20,7 +20,7 @@ export default function ContactPage() {
           Contact Us
         </h1>
         <p className='text-muted-foreground max-w-[700px]'>
-          Have questions about our courses or want to learn more about TechEd
+          Have questions about our courses or want to learn more about Birotojob
           Academy? We&apos;re here to help!
         </p>
       </div>
@@ -124,7 +124,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className='font-medium'>Email</h3>
                   <p className='text-sm text-muted-foreground'>
-                    info@techedacademy.com
+                    info@birotojobacademy.com
                   </p>
                 </div>
               </div>
@@ -191,7 +191,7 @@ export default function ContactPage() {
           allowFullScreen
           loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
-          title='TechEd Academy Location'
+          title='Birotojob Academy Location'
         ></iframe>
       </div>
     </div>

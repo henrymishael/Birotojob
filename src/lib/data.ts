@@ -31,7 +31,7 @@ export const allCourses = [
     level: "Beginner to Junior",
     price: "₦175,000",
     startDate: "June 15, 2025",
-    instructor: ["Engr. Solomon", "Henry Mishael", "Michael Akpan"],
+    instructor: ["Engr. Solomon"],
     topics: ["HTML/CSS", "JavaScript", "React", "Next JS"],
     prerequisites: [
       "Basic computer skills",
@@ -117,16 +117,119 @@ export const allCourses = [
     ],
   },
   {
+    id: "data-analysis",
+    title: "Data Analysis and Visualization",
+    description:
+      "Gain practical skills in analyzing, interpreting, and visualizing data using Python, Excel, and leading visualization tools. Learn to turn raw data into actionable insights for business and research.",
+    image: "/images/data.jpg",
+    duration: "12 weeks",
+    level: "Beginner to Intermediate",
+    price: "₦175,000",
+    startDate: "July 10, 2025",
+    instructor: "Glory Ijiobor",
+    topics: [
+      "Excel",
+      "Python",
+      "Data Cleaning",
+      "Data Visualization",
+      "Power BI",
+      "Tableau",
+      "Reporting",
+    ],
+    prerequisites: [
+      "Basic computer skills",
+      "No prior programming experience required",
+      "Own laptop with internet access",
+    ],
+    learningOutcomes: [
+      "Clean, organize, and analyze data using Excel and Python",
+      "Create interactive dashboards and reports with Power BI and Tableau",
+      "Visualize data to communicate insights effectively",
+      "Apply statistical techniques to interpret data",
+      "Automate data workflows for efficiency",
+    ],
+    format:
+      "Part-time, in-person or online, with live instruction, hands-on projects, and mentorship.",
+    modules: [
+      {
+        title: "Introduction to Data Analysis",
+        description: "Fundamentals of data analysis and the data lifecycle",
+        topics: [
+          "Data Types",
+          "Data Collection",
+          "Data Quality",
+          "Data Ethics",
+          "Project Scoping",
+        ],
+      },
+      {
+        title: "Excel for Data Analysis",
+        description: "Using Excel for data cleaning, analysis, and reporting",
+        topics: [
+          "Formulas & Functions",
+          "Pivot Tables",
+          "Data Cleaning",
+          "Conditional Formatting",
+          "Charts & Graphs",
+        ],
+      },
+      {
+        title: "Python for Data Analysis",
+        description: "Leveraging Python and pandas for data manipulation",
+        topics: [
+          "Python Basics",
+          "pandas",
+          "NumPy",
+          "Data Import/Export",
+          "Data Transformation",
+        ],
+      },
+      {
+        title: "Data Visualization with Power BI & Tableau",
+        description: "Building interactive dashboards and visualizations",
+        topics: [
+          "Power BI Basics",
+          "Tableau Basics",
+          "Data Connections",
+          "Visual Best Practices",
+          "Dashboard Design",
+        ],
+      },
+      {
+        title: "Statistical Analysis",
+        description: "Applying statistics to extract insights from data",
+        topics: [
+          "Descriptive Statistics",
+          "Data Aggregation",
+          "Correlation Analysis",
+          "Trend Analysis",
+          "Reporting",
+        ],
+      },
+      {
+        title: "Capstone Project",
+        description: "End-to-end data analysis and visualization project",
+        topics: [
+          "Project Planning",
+          "Data Sourcing",
+          "Analysis & Visualization",
+          "Presentation Skills",
+          "Storytelling with Data",
+        ],
+      },
+    ],
+  },
+  {
     id: "data-science",
     title: "Data Science and Machine Learning",
     description:
       "Learn to analyze data, build predictive models, and extract insights using Python, statistical methods, and machine learning algorithms.",
-    image: "/images/data.jpg",
+    image: "/images/Data-analysis.jpg",
     duration: "16 weeks",
     level: "Intermediate",
     price: "₦175,000",
     startDate: "July 10, 2025",
-    instructor: "Prof. Michael Chen",
+    instructor: "Engineer Solomon",
     topics: [
       "Python",
       "Statistics",
@@ -317,6 +420,112 @@ export const allCourses = [
           "Presentation Skills",
           "Design Critique",
           "Interview Preparation",
+        ],
+      },
+    ],
+  },
+  {
+    id: "ict-fundamentals",
+    title: "ICT Fundamentals",
+    description:
+      "Build a strong foundation in Information and Communication Technology (ICT), covering essential computer skills, digital literacy, and basic networking concepts for beginners.",
+    image: "/images/ICT.jpg",
+    duration: "8 weeks",
+    level: "Beginner",
+    price: "₦120,000",
+    startDate: "May 5, 2025",
+    instructor: "Akpan Michael",
+    topics: [
+      "Computer Basics",
+      "Digital Literacy",
+      "Internet & Email",
+      "Office Productivity Tools",
+      "Basic Networking",
+    ],
+    prerequisites: [
+      "No prior ICT experience required",
+      "Interest in technology",
+      "Own laptop with internet access",
+    ],
+    learningOutcomes: [
+      "Understand the fundamentals of computers and operating systems",
+      "Use common office productivity tools (Word, Excel, PowerPoint)",
+      "Navigate the internet safely and use email effectively",
+      "Recognize basic networking concepts and terminology",
+      "Apply digital literacy skills in everyday scenarios",
+    ],
+    format:
+      "Full-time or part-time, in-person or online, with live instruction, hands-on exercises, and practical assignments.",
+    modules: [
+      {
+        title: "Introduction to ICT",
+        description:
+          "Overview of ICT concepts and their importance in modern society",
+        topics: [
+          "What is ICT?",
+          "History of Computing",
+          "Applications of ICT",
+          "Digital Transformation",
+          "Careers in ICT",
+        ],
+      },
+      {
+        title: "Computer Basics",
+        description:
+          "Understanding computer hardware, software, and operating systems",
+        topics: [
+          "Computer Components",
+          "Operating Systems",
+          "File Management",
+          "Peripheral Devices",
+          "Basic Troubleshooting",
+        ],
+      },
+      {
+        title: "Digital Literacy",
+        description:
+          "Developing essential digital skills for the workplace and daily life",
+        topics: [
+          "Typing Skills",
+          "Internet Safety",
+          "Online Communication",
+          "Social Media Basics",
+          "Digital Etiquette",
+        ],
+      },
+      {
+        title: "Office Productivity Tools",
+        description:
+          "Hands-on training with Microsoft Office and Google Workspace",
+        topics: [
+          "Word Processing",
+          "Spreadsheets",
+          "Presentations",
+          "Cloud Storage",
+          "Collaboration Tools",
+        ],
+      },
+      {
+        title: "Internet and Email",
+        description: "Navigating the web and managing email communications",
+        topics: [
+          "Web Browsers",
+          "Search Engines",
+          "Email Setup",
+          "Email Etiquette",
+          "Avoiding Scams",
+        ],
+      },
+      {
+        title: "Basic Networking",
+        description:
+          "Introduction to networking concepts and safe internet practices",
+        topics: [
+          "What is a Network?",
+          "Types of Networks",
+          "Wi-Fi Setup",
+          "Network Security Basics",
+          "Troubleshooting Connectivity",
         ],
       },
     ],

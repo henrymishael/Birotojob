@@ -27,7 +27,7 @@ export default function AboutPage() {
         <div className='relative h-[300px] lg:h-[400px] w-full overflow-hidden rounded-xl'>
           <Image
             src='/images/about.jpg'
-            alt='TechEd Academy campus'
+            alt='Birotojob Academy campus'
             fill
             className='object-cover'
           />

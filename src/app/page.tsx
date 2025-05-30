@@ -34,7 +34,10 @@ export default function Home() {
                 <Link href='/courses'>
                   <Button size='lg'>Explore Courses</Button>
                 </Link>
-                <Link href='/contact'>
+                <Link
+                  href='https://api.whatsapp.com/send/?phone=2349081893000&text&type=phone_number&app_absent=0'
+                  target='_blank'
+                >
                   <Button variant='outline' size='lg'>
                     Contact Us
                   </Button>
@@ -206,7 +209,7 @@ export default function Home() {
             </h2>
             <p className='max-w-[700px] text-muted-foreground md:text-xl'>
               Hear from our graduates who have transformed their careers with
-              TechEd Academy.
+              BirotoJob Academy.
             </p>
           </div>
         </div>

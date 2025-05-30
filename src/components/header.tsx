@@ -47,13 +47,29 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side='left' className='w-[240px] sm:w-[300px]'>
               <div className='flex flex-col gap-6 py-4'>
-                <Link
-                  href='/'
-                  className='flex items-center gap-2 font-bold text-xl'
-                  onClick={() => setIsOpen(false)}
-                >
-                  BIRO<sup>TO</sup>JOB
-                </Link>
+                <Image
+                  src={"/images/biroblack.svg"}
+                  alt=''
+                  width={120}
+                  height={50}
+                  className={cn(
+                    "transition-all duration-500 ease-in-out",
+                    "block dark:hidden opacity-100 scale-100"
+                  )}
+                  style={{ zIndex: 2 }}
+                />
+                {/* White logo */}
+                <Image
+                  src={"/images/birowhite.svg"}
+                  alt=''
+                  width={120}
+                  height={50}
+                  className={cn(
+                    " transition-all duration-500 ease-in-out",
+                    "hidden dark:block opacity-100 scale-100"
+                  )}
+                  style={{ zIndex: 2 }}
+                />
                 <nav className='flex flex-col gap-4'>
                   {navigation.map((item) => (
                     <NavigationLink

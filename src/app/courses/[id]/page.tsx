@@ -150,7 +150,9 @@ export default function CoursePage({ params }: { params: { id: string } }) {
                 <span className='font-medium'>Instructor:</span>
                 <span>{course.instructor}</span>
               </div>
-              <Button className='w-full'>Enroll Now</Button>
+              <Link href='https://docs.google.com/forms/d/e/1FAIpQLSdIlGbYjokRTIbGjEZyDahwzAHYNq5dNGryhQqvRHjXnc7_nA/viewform?usp=header'>
+                <Button className='w-full'>Enroll Now</Button>
+              </Link>
               <Button variant='outline' className='w-full'>
                 Download Syllabus
               </Button>

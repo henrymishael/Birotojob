@@ -17,7 +17,7 @@ const navigation = [
   { name: "About", href: "/about" },
   {
     name: "Contact",
-    href: "https://docs.google.com/forms/d/e/1FAIpQLSdIlGbYjokRTIbGjEZyDahwzAHYNq5dNGryhQqvRHjXnc7_nA/viewform?usp=header",
+    href: "https://api.whatsapp.com/send/?phone=2349081893000&text&type=phone_number&app_absent=0",
   },
 ];
 

@@ -331,7 +331,7 @@ export const allCourses = [
     level: "Beginner",
     price: "₦175,000",
     startDate: "May 20, 2025",
-    instructor: "Alex Rodriguez",
+    instructor: "Blessing Praise",
     topics: [
       "User Research",
       "Wireframing",

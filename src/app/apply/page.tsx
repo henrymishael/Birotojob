@@ -11,7 +11,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import { toast } from "sonner";
-import { allCourses } from "@/lib/data";
+import { allCourses, partners } from "@/lib/data";
 
 export default function Home() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -42,9 +42,9 @@ export default function Home() {
 
     try {
       // Replace these with your actual EmailJS service ID, template ID, and public key
-      const serviceId = "YOUR_SERVICE_ID";
-      const templateId = "YOUR_TEMPLATE_ID";
-      const publicKey = "YOUR_PUBLIC_KEY";
+      const serviceId = "service_7ptssxq";
+      const templateId = "template_ogpxyf7";
+      const publicKey = "ovAzJ95MugcxA7Bq5";
 
       const templateParams = {
         firstName: formData.firstName,
@@ -55,7 +55,6 @@ export default function Home() {
         experience: formData.experience,
         education: formData.education,
         goals: formData.goals,
-        availability: formData.availability,
         fullName: `${formData.firstName} ${formData.lastName}`,
         to_email: "your-email@example.com", // Replace with your email
       };
@@ -151,6 +150,17 @@ export default function Home() {
                 </span>
               </p>
             </div>
+            <Button
+              className='bg-blue-700 dark:bg-blue-500 hover:bg-blue-800 dark:hover:bg-blue-600 text-white lg:px-12 py-4 text-xl rounded-full shadow-lg transform hover:scale-105 transition-all duration-200 mb-6'
+              onClick={() => {
+                const formSection = document.getElementById("apply");
+                if (formSection) {
+                  formSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
+              Click Now To Register
+            </Button>
 
             <div className='mb-8'>
               <p className='text-green-600 dark:text-green-400 font-bold text-2xl mb-6'>
@@ -160,8 +170,22 @@ export default function Home() {
                 <p className='text-gray-600 dark:text-gray-300 font-semibold mb-3'>
                   Accredited &amp; Certified By:
                 </p>
-                <div className='inline-block bg-blue-700 dark:bg-blue-500 text-white px-6 py-3 rounded-lg font-bold text-lg'>
-                  TECH ACADEMY CERTIFICATION
+                <div className='flex flex-wrap justify-center gap-12 items-center'>
+                  {partners.map((partner, index) => (
+                    <div
+                      key={index}
+                      className=' flex flex-col gap-2 items-center  transition-all'
+                    >
+                      <Image
+                        src={partner.logo}
+                        alt={`Partner ${index + 1}`}
+                        className='object-contain'
+                        width={100}
+                        height={100}
+                      />
+                      <p>{partner.name}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -194,11 +218,11 @@ export default function Home() {
                   </span>
                 </div>
                 <h3 className='font-bold text-lg text-slate-800 dark:text-white mb-2'>
-                  Expert Programming Instructors
+                  Expert Instructors
                 </h3>
                 <p className='text-gray-600 dark:text-gray-300'>
                   Learn from industry professionals with years of real-world
-                  software development experience at top tech companies
+                  experience at top tech companies
                 </p>
               </article>
               <article className='text-center p-6 bg-white dark:bg-slate-800 rounded-lg shadow-md'>
@@ -211,7 +235,7 @@ export default function Home() {
                   </span>
                 </div>
                 <h3 className='font-bold text-lg text-slate-800 dark:text-white mb-2'>
-                  Hands-On Coding Projects
+                  Hands-On Projects
                 </h3>
                 <p className='text-gray-600 dark:text-gray-300'>
                   Build real-world applications and portfolio projects that
@@ -265,6 +289,7 @@ export default function Home() {
                   <div className='flex flex-col gap-2 text-sm text-blue-700 dark:text-blue-400 font-medium'>
                     <span>Duration: {course.duration}</span>
                     <span>Level: {course.level}</span>
+                    <span>Price: {course.price}</span>
                   </div>
                 </article>
               ))}
@@ -330,7 +355,7 @@ export default function Home() {
             >
               Our Track Record of Success
             </h2>
-            <div className='grid md:grid-cols-4 gap-6 text-center'>
+            <div className='grid md:grid-cols-3 gap-6 text-center'>
               <div>
                 <div className='text-3xl font-bold mb-2'>100+</div>
                 <div className='text-blue-100 dark:text-blue-200'>
@@ -364,7 +389,7 @@ export default function Home() {
               id='faq-heading'
               className='text-3xl font-bold text-center text-slate-800 dark:text-white mb-12'
             >
-              Frequently Asked Questions About Our Programming Bootcamp
+              Frequently Asked Questions About Our Bootcamp
             </h2>
             <div className='max-w-3xl mx-auto space-y-6'>
               {[
@@ -520,21 +545,11 @@ export default function Home() {
                       <option value=''>
                         Select your preferred programming course
                       </option>
-                      <option value='frontend-development'>
-                        Frontend Web Development Bootcamp (React, NextJs)
-                      </option>
-                      <option value='data-science'>
-                        Data Science & Machine Learning Course
-                      </option>
-                      <option value='data-analysis'>
-                        Data Analysis & Visualization
-                      </option>
-                      <option value='ict-fundamentals'>
-                        ICT Fundamentals & Programming Bootcamp
-                      </option>
-                      <option value='ui/ux'>Product Design (UI/UX)</option>
-
-                      <option value='cybersecurity'>Cybersecurity</option>
+                      {allCourses.map((course) => (
+                        <option key={course.id} value={course.title}>
+                          {course.title}
+                        </option>
+                      ))}
                     </select>
                   </div>
 

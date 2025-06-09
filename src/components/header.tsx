@@ -162,12 +162,26 @@ export default function Header() {
         )}
         <div className='flex items-center gap-2'>
           <ModeToggle />
-          <Link
-            target='_blank'
-            href='https://docs.google.com/forms/d/e/1FAIpQLSdIlGbYjokRTIbGjEZyDahwzAHYNq5dNGryhQqvRHjXnc7_nA/viewform?usp=header'
-          >
-            <Button>Enroll Now</Button>
-          </Link>
+
+          {pathname === "/apply" ? (
+            <div
+              onClick={() => {
+                const formSection = document.getElementById("apply");
+                if (formSection) {
+                  formSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
+              <Button>Enroll Now</Button>
+            </div>
+          ) : (
+            <Link
+              target='_blank'
+              href='https://docs.google.com/forms/d/e/1FAIpQLSdIlGbYjokRTIbGjEZyDahwzAHYNq5dNGryhQqvRHjXnc7_nA/viewform?usp=header'
+            >
+              <Button>Enroll Now</Button>
+            </Link>
+          )}
         </div>
       </div>
     </header>

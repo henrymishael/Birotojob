@@ -842,7 +842,7 @@ export const teamMembers = [
   {
     id: 5,
     name: "Kingsley Olise",
-    role: "Graphics Design and Video Editing Tutor",
+    role: "Head of Design",
     image: "",
     bio: "Kingsley is a creative designer with a passion for visual storytelling. He has worked on numerous projects, from branding to video production, and is dedicated to helping students develop their design skills.",
   },

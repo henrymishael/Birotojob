@@ -337,6 +337,9 @@ export default function Home() {
                       experts. Our state-of-the-art virtual classroom technology
                       ensures an engaging and immersive tech education
                       experience from anywhere in the world.
+                      <p className='font-bold '>
+                        Virtual classes are ₦75,000 for all courses
+                      </p>
                     </p>
                   </div>
                 </div>

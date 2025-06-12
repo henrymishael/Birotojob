@@ -507,7 +507,7 @@ export const allCourses = [
     level: "Intermediate",
     price: "₦175,000",
     startDate: "August 5, 2025",
-    instructor: "Mrs Claire Amuka",
+    instructor: "Mrs Chisom Amuka",
     topics: [
       "Network Security",
       "Ethical Hacking",
@@ -609,7 +609,7 @@ export const allCourses = [
     level: "Beginner to Intermediate",
     price: "₦175,000",
     startDate: "September 2, 2025",
-    instructor: "Mrs Claire Amuka",
+    instructor: "Mrs Chisom Amuka",
     topics: [
       "Project Planning",
       "Agile Methodology",
@@ -820,7 +820,7 @@ export const teamMembers = [
   },
   {
     id: 2,
-    name: "Mrs Claire Amuka",
+    name: "Mrs Chisom Amuka",
     role: "Head of Training & Cybersecurity Tutor",
     image: "",
     bio: "With a PhD in Computer Science and 10 years of experience at leading tech companies, Claire is an AWS Certified Solutions Architect with extensive experience in cloud infrastructure and DevOps practices at scale.",

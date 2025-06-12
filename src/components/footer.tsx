@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -6,7 +8,23 @@ export default function Footer() {
       <div className='container px-4 md:px-6'>
         <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
           <div className='space-y-4'>
-            <h3 className='text-lg font-medium'>BirotoJob Academy</h3>
+            <Image
+              src={"/images/biroblack.svg"}
+              alt=''
+              width={150}
+              height={50}
+              className={cn("", "block dark:hidden")}
+              style={{ zIndex: 2 }}
+            />
+            {/* White logo */}
+            <Image
+              src={"/images/birowhite.svg"}
+              alt=''
+              width={150}
+              height={50}
+              className={cn("", "hidden dark:block")}
+              style={{ zIndex: 2 }}
+            />
             <p className='text-sm text-muted-foreground'>
               Empowering the next generation of tech professionals with
               cutting-edge education and practical skills.
@@ -54,10 +72,10 @@ export default function Footer() {
             <ul className='space-y-2 text-sm'>
               <li>
                 <Link
-                  href='#'
+                  href='/apply'
                   className='text-muted-foreground hover:text-foreground transition-colors'
                 >
-                  Blog
+                  Apply
                 </Link>
               </li>
               <li>

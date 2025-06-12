@@ -101,7 +101,7 @@ export default function Home() {
 
   return (
     <>
-      <main className='min-h-screen container bg-gray-50 dark:bg-slate-900'>
+      <main className=' min-h-screen  bg-gray-50  dark:bg-slate-900'>
         <div className='container mx-auto px-4 py-12 max-w-4xl'>
           {/* Hero Section */}
           <section className='text-center mb-12' aria-labelledby='hero-heading'>
@@ -190,9 +190,9 @@ export default function Home() {
               </div>
             </div>
 
-            <Button className='bg-blue-700 dark:bg-blue-500 hover:bg-blue-800 dark:hover:bg-blue-600 text-white lg:px-12 py-4 text-xl rounded-full shadow-lg transform hover:scale-105 transition-all duration-200 mb-12'>
-              Enroll in Programming Bootcamp @ 25% Early Bird Discount
-            </Button>
+            {/* <Button className='bg-blue-700 dark:bg-blue-500 hover:bg-blue-800 dark:hover:bg-blue-600 text-white lg:px-12 py-4 text-xl rounded-full shadow-lg transform hover:scale-105 transition-all duration-200 mb-12 text-wrap'>
+              Enroll in Programming Bootcamp for Early Bird Discount
+            </Button> */}
           </section>
 
           {/* Features Section */}
@@ -434,7 +434,7 @@ export default function Home() {
             className='max-w-3xl mx-auto'
             aria-labelledby='application-heading'
           >
-            <Card className='shadow-xl bg-white dark:bg-slate-800'>
+            <Card className='shadow-xl bg-transparent md:bg-white md:dark:bg-slate-800'>
               <CardContent className='p-10'>
                 <div className='text-center mb-8'>
                   <h2
@@ -622,7 +622,7 @@ export default function Home() {
                       htmlFor='goals'
                       className='text-sm font-semibold text-gray-700 dark:text-gray-200'
                     >
-                      Career Goals &amp; Motivation for Learning Tech *
+                      Why do you want to Learn *
                     </Label>
                     <Textarea
                       id='goals'

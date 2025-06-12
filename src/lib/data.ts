@@ -815,14 +815,14 @@ export const teamMembers = [
     id: 1,
     name: "Dr. Charles ",
     role: "Founder & CEO",
-    image: "",
+    image: "/images/ceo.jpg",
     bio: "Dr. Charles has over 15 years of experience in the tech industry and academia. He founded Birotojob Academy with a mission to make quality tech education accessible to everyone.",
   },
   {
     id: 2,
     name: "Mrs Chisom Amuka",
     role: "Head of Training & Cybersecurity Tutor",
-    image: "",
+    image: "/images/claire.jpg",
     bio: "With a PhD in Computer Science and 10 years of experience at leading tech companies, Claire is an AWS Certified Solutions Architect with extensive experience in cloud infrastructure and DevOps practices at scale.",
   },
   {

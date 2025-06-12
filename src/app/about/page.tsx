@@ -174,7 +174,7 @@ export default function AboutPage() {
             <Card key={member.id}>
               <CardContent className='pt-6'>
                 <div className='flex flex-col items-center text-center space-y-4'>
-                  <div className='relative h-12 w-12 rounded-full overflow-hidden'>
+                  <div className='relative h-20 w-20 rounded-full overflow-hidden'>
                     {member.image ? (
                       <Image
                         src={member.image}
@@ -183,7 +183,7 @@ export default function AboutPage() {
                         className='object-cover'
                       />
                     ) : (
-                      <div className='bg-primary flex items-center justify-center h-12 w-12 text-white text-2xl font-bold'>
+                      <div className='bg-primary flex items-center justify-center h-20 w-20 text-white text-2xl font-bold'>
                         {member.name
                           .split(" ")
                           .map((n) => n[0])

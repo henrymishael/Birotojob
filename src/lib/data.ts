@@ -842,7 +842,7 @@ export const teamMembers = [
     id: 3,
     name: "Mrs Jane Roberts",
     role: "Human Resource Manager",
-    image: "/images/jane.jpg",
+    image: "/images/Jane.jpg",
     bio: "Jane is a HR professional passionate about supporting employee growth and fostering a positive workplace culture. She assists with recruitment, onboarding, and day-to-day HR operations at Birotojob Academy.",
   },
   {

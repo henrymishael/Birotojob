@@ -131,8 +131,12 @@ export default function CoursePage({ params }: { params: { id: string } }) {
             </CardHeader>
             <CardContent className='space-y-4'>
               <div className='flex justify-between'>
-                <span className='font-medium'>Price:</span>
+                <span className='font-medium'>Price(physical):</span>
                 <span>{course.price}</span>
+              </div>
+              <div className='flex justify-between'>
+                <span className='font-medium'>Virtual :</span>
+                <span>{course.virtual}</span>
               </div>
               <div className='flex justify-between'>
                 <span className='font-medium'>Start Date:</span>

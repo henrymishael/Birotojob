@@ -27,9 +27,10 @@ export const allCourses = [
     description:
       "Comprehensive training in modern web development technologies including HTML, CSS, JavaScript, React, and NextJS",
     image: "/images/fullstack.jpg",
-    duration: "9 weeks",
+    duration: "10 weeks",
     level: "Beginner to Junior",
     price: "₦175,000",
+    virtual: "₦75,000",
     startDate: "June 15, 2025",
     instructor: ["Engr. Solomon"],
     topics: ["HTML/CSS", "JavaScript", "React", "Next JS"],
@@ -89,9 +90,11 @@ export const allCourses = [
     description:
       "Gain practical skills in analyzing, interpreting, and visualizing data using Python, Excel, and leading visualization tools. Learn to turn raw data into actionable insights for business and research.",
     image: "/images/data.jpg",
-    duration: "9 weeks",
+    duration: "10 weeks",
     level: "Beginner to Intermediate",
     price: "₦175,000",
+    virtual: "₦75,000",
+
     startDate: "July 10, 2025",
     instructor: "Glory Ijiobor",
     topics: [
@@ -192,9 +195,11 @@ export const allCourses = [
     description:
       "Learn to analyze data, build predictive models, and extract insights using Python, statistical methods, and machine learning algorithms.",
     image: "/images/Data-analysis.jpg",
-    duration: "9 weeks",
+    duration: "10 weeks",
     level: "Intermediate",
     price: "₦175,000",
+    virtual: "₦75,000",
+
     startDate: "July 10, 2025",
     instructor: "Engineer Solomon",
     topics: [
@@ -294,9 +299,11 @@ export const allCourses = [
     description:
       "Master the principles of user experience and interface design to create intuitive, accessible, and visually appealing digital products.",
     image: "/images/ux.jpg",
-    duration: "9 weeks",
+    duration: "10 weeks",
     level: "Beginner",
     price: "₦175,000",
+    virtual: "₦75,000",
+
     startDate: "May 20, 2025",
     instructor: "Blessing Praise",
     topics: [
@@ -397,9 +404,11 @@ export const allCourses = [
     description:
       "Build a strong foundation in Information and Communication Technology (ICT), covering essential computer skills, digital literacy, and basic networking concepts for beginners.",
     image: "/images/ICT.jpg",
-    duration: "9 weeks",
+    duration: "10 weeks",
     level: "Beginner",
     price: "₦175,000",
+    virtual: "₦75,000",
+
     startDate: "May 5, 2025",
     instructor: "Akpan Michael",
     topics: [
@@ -503,9 +512,11 @@ export const allCourses = [
     description:
       "Learn to protect systems, networks, and programs from digital attacks with comprehensive training in cybersecurity principles and practices.",
     image: "/images/cyber.jpg",
-    duration: "9 weeks",
+    duration: "10 weeks",
     level: "Intermediate",
-    price: "₦175,000",
+    price: "₦350,000",
+    virtual: "₦175,000",
+
     startDate: "August 5, 2025",
     instructor: "Mrs Chisom Amuka",
     topics: [
@@ -608,6 +619,8 @@ export const allCourses = [
     duration: "9 weeks",
     level: "Beginner to Intermediate",
     price: "₦175,000",
+    virtual: "₦75,000",
+
     startDate: "September 2, 2025",
     instructor: "Mrs Chisom Amuka",
     topics: [
@@ -707,7 +720,7 @@ export const allCourses = [
     description:
       "Develop creative skills in graphic design, branding, and visual storytelling using industry-standard tools like Adobe Photoshop, Illustrator, and Canva.",
     image: "/images/graphics.jpeg",
-    duration: "9 weeks",
+    duration: "10 weeks",
     level: "Beginner to Intermediate",
     price: "₦175,000",
     startDate: "September 16, 2025",
@@ -829,21 +842,21 @@ export const teamMembers = [
     id: 3,
     name: "Mrs Jane Roberts",
     role: "Human Resource Manager",
-    image: "",
+    image: "/images/jane.jpg",
     bio: "Jane is a HR professional passionate about supporting employee growth and fostering a positive workplace culture. She assists with recruitment, onboarding, and day-to-day HR operations at Birotojob Academy.",
   },
   {
     id: 4,
     name: "Engr. Solomon",
     role: "Lead Instructor",
-    image: "",
+    image: "/images/Engineer.jpg",
     bio: "Solomon has designed user experiences for Fortune 500 companies and startups alike. He brings real-world design challenges into the classroom.",
   },
   {
     id: 5,
     name: "Akpan Michael",
     role: "ICT Instructor",
-    image: "",
+    image: "/images/Mikael.jpg",
     bio: "Michael is a certified Frorntend Developer with experience in web and mobile sector security. He ensures our cybersecurity curriculum meets industry standards.",
   },
   {

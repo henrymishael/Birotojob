@@ -35,22 +35,22 @@ export default function Header() {
   }, []);
 
   return (
-    <header className='sticky top-0 z-20 w-full border-b bg-transparent backdrop-blur supports-[backdrop-filter]:bg-background/60'>
-      <div className='container flex h-16 items-center justify-between'>
-        <div className='flex items-center gap-2'>
+    <header className="sticky top-0 z-20 w-full border-b bg-transparent backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 items-center justify-between">
+        <div className="flex items-center gap-2">
           {pathname !== "/apply" && (
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
-                <Button variant='ghost' size='icon' className='md:hidden'>
-                  <Menu className='h-6 w-6' />
-                  <span className='sr-only'>Toggle menu</span>
+                <Button variant="ghost" size="icon" className="md:hidden">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Toggle menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side='left' className='w-[240px] sm:w-[300px]'>
-                <div className='flex flex-col gap-6 py-4'>
+              <SheetContent side="left" className="w-[240px] sm:w-[300px]">
+                <div className="flex flex-col gap-6 py-4">
                   <Image
                     src={"/images/biroblack.svg"}
-                    alt=''
+                    alt=""
                     width={120}
                     height={50}
                     className={cn(
@@ -62,7 +62,7 @@ export default function Header() {
                   {/* White logo */}
                   <Image
                     src={"/images/birowhite.svg"}
-                    alt=''
+                    alt=""
                     width={120}
                     height={50}
                     className={cn(
@@ -71,7 +71,7 @@ export default function Header() {
                     )}
                     style={{ zIndex: 2 }}
                   />
-                  <nav className='flex flex-col gap-4'>
+                  <nav className="flex flex-col gap-4">
                     {navigation.map((item) => (
                       <NavigationLink
                         key={item.name}
@@ -92,15 +92,15 @@ export default function Header() {
             </Sheet>
           )}
           <Link
-            href='/'
-            className='flex items-center gap-2 font-bold text-xl relative '
+            href="/"
+            className="flex items-center gap-2 font-bold text-xl relative "
           >
             {/* Logo transition */}
-            <span className='relative w-[150px] h-[50px] flex items-center'>
+            <span className="relative w-[150px] h-[50px] flex items-center">
               {/* Black logo */}
               <Image
                 src={"/images/biroblack.svg"}
-                alt=''
+                alt=""
                 width={150}
                 height={50}
                 className={cn(
@@ -115,7 +115,7 @@ export default function Header() {
               {/* White logo */}
               <Image
                 src={"/images/birowhite.svg"}
-                alt=''
+                alt=""
                 width={150}
                 height={50}
                 className={cn(
@@ -130,7 +130,7 @@ export default function Header() {
               {/* Switch logo */}
               <Image
                 src={"/images/switchlogo.svg"}
-                alt=''
+                alt=""
                 width={30}
                 height={50}
                 className={cn(
@@ -144,8 +144,8 @@ export default function Header() {
             </span>
           </Link>
         </div>
-        {pathname !== "/apply" && (
-          <nav className='hidden md:flex items-center gap-6'>
+        {pathname !== "/apply" && pathname !== "/summerschool" && (
+          <nav className="hidden md:flex items-center gap-6">
             {navigation.map((item) => (
               <NavigationLink
                 key={item.name}
@@ -160,10 +160,10 @@ export default function Header() {
             ))}
           </nav>
         )}
-        <div className='flex items-center gap-2'>
+        <div className="flex items-center gap-2">
           <ModeToggle />
 
-          {pathname === "/apply" ? (
+          {pathname === "/apply" || pathname === "/summerschool" ? (
             <div
               onClick={() => {
                 const formSection = document.getElementById("apply");
@@ -176,8 +176,8 @@ export default function Header() {
             </div>
           ) : (
             <Link
-              target='_blank'
-              href='https://docs.google.com/forms/d/e/1FAIpQLSdIlGbYjokRTIbGjEZyDahwzAHYNq5dNGryhQqvRHjXnc7_nA/viewform?usp=header'
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdIlGbYjokRTIbGjEZyDahwzAHYNq5dNGryhQqvRHjXnc7_nA/viewform?usp=header"
             >
               <Button>Enroll Now</Button>
             </Link>

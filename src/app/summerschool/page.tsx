@@ -34,6 +34,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import Image from "next/image";
 
 const SummerCampPage = () => {
   const [selectedProgram, setSelectedProgram] = useState("kids");
@@ -126,26 +127,26 @@ Please provide more information about enrollment.`;
     },
     {
       icon: <Palette className="w-8 h-8" />,
-      name: "Graphic Design",
-      color: "text-pink-600",
-      desc: "Design principles and creative tools",
+      name: "Robotics",
+      color: "text-slate-600",
+      desc: "Introduction to robotics and automation",
     },
     {
       icon: <BicepsFlexed className="w-8 h-8" />,
       name: "Leadership Skills",
-      color: "text-pink-600",
+      color: "text-orange-600",
       desc: "Teamwork, communication, and problem-solving",
     },
     {
       icon: <Weight className="w-8 h-8" />,
       name: "Personal Development",
-      color: "text-pink-600",
+      color: "text-yellow-600",
       desc: "Confidence building, goal setting, and time management",
     },
     {
       icon: <Puzzle className="w-8 h-8" />,
       name: "Fun and Games",
-      color: "text-pink-600",
+      color: "text-teal-600",
       desc: "Interactive activities and team-building games",
     },
   ];
@@ -186,7 +187,7 @@ Please provide more information about enrollment.`;
     {
       question: "What is included in the program fee?",
       answer:
-        "The program fee covers all training materials, access to software tools, project resources, certificate of completion, lunch during camp days, and ongoing support throughout the program duration.",
+        "The program fee covers all training materials, access to software tools, project resources, certificate of completion, and ongoing support throughout the program duration.",
     },
     {
       question: "Do children need any prior experience with technology?",
@@ -246,7 +247,16 @@ Please provide more information about enrollment.`;
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative overflow-hidden">
+      <Brain
+        size={100}
+        className="hidden md:block absolute top-2 left-4 animate-bounce transition-all duration-1000 ease-in-out text-blue-500 opacity-70"
+      />
+
+      <Puzzle
+        size={100}
+        className="hidden md:block absolute top-[300px] right-4 animate-spin transition-all duration-1000 ease-in-out text-pink-500 opacity-70"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-20">
         <div className="container mx-auto px-4">
@@ -264,20 +274,20 @@ Please provide more information about enrollment.`;
             </div>*/}
 
             <div className="max-w-4xl mx-auto">
-              <div className="bg-white rounded-2xl p-8 shadow-xl">
-                <div className="text-blue-700 dark:text-blue-400 font-bold text-xl tracking-wide mb-4 md:mb-8">
+              <div className="bg-blue-700 rounded-2xl p-8 shadow-xl">
+                <div className="text-white dark:text-blue-400 font-bold text-xl tracking-wide mb-4 md:mb-8">
                   Birotojob Academy™
                 </div>
                 <div className="flex flex-col md:flex-row items-center justify-center mb-6">
                   <div className="bg-green-500 text-white px-4 py-2 rounded-full font-bold text-lg mr-4">
                     Tech
                   </div>
-                  <h1 className="text-4xl md:text-6xl font-bold text-blue-600">
+                  <h1 className="text-4xl md:text-6xl font-bold text-white">
                     Summer Camp
                   </h1>
                 </div>
 
-                <p className="text-xl text-gray-600 mb-6">
+                <p className="text-xl text-white mb-6">
                   Empowering the next generation with essential technology
                   skills through hands-on learning and creative projects
                 </p>
@@ -287,7 +297,7 @@ Please provide more information about enrollment.`;
                     <Calendar className="w-5 h-5 inline mr-2" />
                     July 28th - Aug 29th
                   </div>
-                  <div className="text-blue-600 font-semibold text-lg">
+                  <div className="text-emerald-200 font-semibold text-lg">
                     Ages 6-16 Welcome!
                   </div>
                 </div>
@@ -375,6 +385,14 @@ Please provide more information about enrollment.`;
                       Monday - Friday, 9:00 AM - 1:00 PM
                     </p>
                   </div>
+                </div>
+                <div className="flex items-center justify-center w-full">
+                  <Image
+                    src={"/images/kids.png"}
+                    alt=""
+                    width={500}
+                    height={500}
+                  />
                 </div>
               </div>
             </div>

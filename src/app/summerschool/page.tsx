@@ -22,6 +22,9 @@ import {
   Target,
   Mail,
   MapPin as Location,
+  BicepsFlexed,
+  Weight,
+  Puzzle,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
@@ -105,7 +108,7 @@ Please provide more information about enrollment.`;
   const skills = [
     {
       icon: <Code className="w-8 h-8" />,
-      name: "Web Development",
+      name: "Coding Basics",
       color: "text-blue-600",
       desc: "HTML, CSS, JavaScript fundamentals",
     },
@@ -126,6 +129,24 @@ Please provide more information about enrollment.`;
       name: "Graphic Design",
       color: "text-pink-600",
       desc: "Design principles and creative tools",
+    },
+    {
+      icon: <BicepsFlexed className="w-8 h-8" />,
+      name: "Leadership Skills",
+      color: "text-pink-600",
+      desc: "Teamwork, communication, and problem-solving",
+    },
+    {
+      icon: <Weight className="w-8 h-8" />,
+      name: "Personal Development",
+      color: "text-pink-600",
+      desc: "Confidence building, goal setting, and time management",
+    },
+    {
+      icon: <Puzzle className="w-8 h-8" />,
+      name: "Fun and Games",
+      color: "text-pink-600",
+      desc: "Interactive activities and team-building games",
     },
   ];
 
@@ -197,6 +218,12 @@ Please provide more information about enrollment.`;
       answer:
         "We provide make-up sessions and supplementary materials to ensure your child doesn't fall behind. Our instructors also offer one-on-one catch-up sessions when needed.",
     },
+    {
+      question:
+        "What other activities is available for my child during the summer school program?",
+      answer:
+        "We will also equip your kids with personal development programmes and build them with various leadership skill, organizational skills, clarity on goals and there will also be different breakout sessions where they will have different roles assigned to them, plan project from scratch and pitch ideas.",
+    },
   ];
 
   const features = [
@@ -210,11 +237,7 @@ Please provide more information about enrollment.`;
       title: "Certified Instructors",
       desc: "Industry professionals with youth education expertise",
     },
-    {
-      icon: <Clock className="w-12 h-12 text-purple-600" />,
-      title: "Flexible Schedule",
-      desc: "Morning and afternoon sessions available",
-    },
+
     {
       icon: <Target className="w-12 h-12 text-red-600" />,
       title: "Project-Based Learning",
@@ -349,7 +372,7 @@ Please provide more information about enrollment.`;
                   <div>
                     <p className="font-semibold text-purple-800">Schedule</p>
                     <p className="text-purple-700 text-sm">
-                      Monday - Friday, 9:00 AM - 3:00 PM
+                      Monday - Friday, 9:00 AM - 1:00 PM
                     </p>
                   </div>
                 </div>
@@ -390,7 +413,7 @@ Please provide more information about enrollment.`;
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Why Choose BiroToJob Summer Camp?
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}

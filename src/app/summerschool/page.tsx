@@ -637,7 +637,7 @@ Please provide more information about enrollment.`;
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white"
+                      className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-white dark:text-black"
                       placeholder="Enter your child's name"
                       required
                     />
@@ -652,7 +652,7 @@ Please provide more information about enrollment.`;
                       name="age"
                       value={formData.age}
                       onChange={handleInputChange}
-                      className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white"
+                      className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-white dark:text-black"
                       placeholder="Child's age"
                       min={6}
                       max={16}
@@ -670,7 +670,7 @@ Please provide more information about enrollment.`;
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white"
+                    className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-white dark:text-black"
                     placeholder="+234 xxx xxx xxxx"
                     required
                   />
@@ -685,7 +685,7 @@ Please provide more information about enrollment.`;
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white"
+                    className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-white dark:text-black"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -701,7 +701,7 @@ Please provide more information about enrollment.`;
                       setFormData({ ...formData, program: value })
                     }
                   >
-                    <SelectTrigger className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white">
+                    <SelectTrigger className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-white dark:text-black">
                       <SelectValue placeholder="Select a program" />
                     </SelectTrigger>
                     <SelectContent>
@@ -717,7 +717,13 @@ Please provide more information about enrollment.`;
 
                 <button
                   onClick={handleWhatsAppContact}
-                  className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-4 px-8 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-3"
+                  disabled={
+                    !formData.name ||
+                    !formData.age ||
+                    !formData.phone ||
+                    !formData.program
+                  }
+                  className=" disabled:bg-green-300 w-full bg-green-600 text-white py-4 px-8 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-3"
                 >
                   <MessageCircle className="w-6 h-6" />
                   <span>Enroll via WhatsApp</span>

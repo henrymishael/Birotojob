@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { NavigationProvider } from "@/hooks/services";
 import { Toaster } from "sonner";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 const quicksand = Quicksand({ subsets: ["latin", "latin-ext", "vietnamese"] });
@@ -207,23 +208,41 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Facebook Pixel Script */}
+        <Script id="fb-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '672656989164693');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+      </head>
+
       <body className={quicksand.className}>
         <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
+          attribute="class"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
           <NavigationProvider>
-            <div className='flex min-h-screen flex-col'>
+            <div className="flex min-h-screen flex-col">
               <Header />
-              <main className='flex-1'>{children}</main>
+              <main className="flex-1">{children}</main>
               <Footer />
             </div>
           </NavigationProvider>
         </ThemeProvider>
-        <Toaster position='top-right' richColors theme='light' />
+        <Toaster position="top-right" richColors theme="light" />
       </body>
     </html>
   );

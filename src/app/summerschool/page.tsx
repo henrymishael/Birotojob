@@ -57,7 +57,7 @@ const SummerCampPage = () => {
   };
 
   //   const handleWhatsAppContact = () => {
-  //     const message = `Hi! I'm interested in the BIRO TO JOB Tech Summer Camp for ${
+  //     let message = `Hi! I'm interested in the BIRO TO JOB Tech Summer Camp for ${
   //       formData.program === "kids" ? "Kids (Ages 6-11)" : "Teens (Ages 12-16)"
   //     }.
 
@@ -73,16 +73,51 @@ const SummerCampPage = () => {
 
   // Please provide more information about enrollment.`;
 
-  //     const whatsappUrl = `https://wa.me/2349081893000?text=${encodeURIComponent(
-  //       message
-  //     )}`;
+  //     // Use wa.me for all platforms - it handles redirects automatically
+  //     const encodedMessage = encodeURIComponent(message);
+  //     const whatsappUrl = `https://wa.me/2349081893000?text=${encodedMessage}`;
+
+  //     // For better cross-platform compatibility
+  //     if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+  //       // For iOS, try the app first, then fallback
+  //       window.location.href = `whatsapp://send?phone=2349081893000&text=${encodedMessage}`;
+  //       setTimeout(() => {
+  //         window.open(whatsappUrl, "_blank");
+  //       }, 1500);
+  //     } else {
+  //       window.open(whatsappUrl, "_blank");
+  //     }
+  //   };
+
+  //   const handleWhatsAppContact = () => {
+  //     let message = `Hi! I'm interested in the BIRO TO JOB Tech Summer Camp for ${
+  //       formData.program === "kids" ? "Kids (Ages 6-11)" : "Teens (Ages 12-16)"
+  //     }.
+
+  // Name: ${formData.name}
+  // Age: ${formData.age}
+  // Phone: ${formData.phone}
+  // Email: ${formData.email}
+  // Program: ${
+  //       formData.program === "kids"
+  //         ? "Kids Program (₦50,000)"
+  //         : "Teens Program (₦75,000)"
+  //     }
+
+  // Please provide more information about enrollment.;`;
+
+  //     // WhatsApp Web and mobile require \n to be encoded as %0A
+  //     const encodedMessage = encodeURIComponent(message).replace(/%0A/g, "%0A");
+  //     const whatsappUrl = `https://wa.me/2349081893000?text=${encodedMessage}`;
   //     window.open(whatsappUrl, "_blank");
   //   };
 
   const handleWhatsAppContact = () => {
+    // Create the message with proper formatting
     let message = `Hi! I'm interested in the BIRO TO JOB Tech Summer Camp for ${
       formData.program === "kids" ? "Kids (Ages 6-11)" : "Teens (Ages 12-16)"
-    }.\n
+    }.
+
 Name: ${formData.name}
 Age: ${formData.age}
 Phone: ${formData.phone}
@@ -95,13 +130,56 @@ Program: ${
 
 Please provide more information about enrollment.`;
 
-    // Properly encode and replace newlines for WhatsApp
-    const whatsappUrl = `https://wa.me/09081893000?text=${encodeURIComponent(
-      message
-    ).replace(/%0A/g, "%0A")}`;
-    window.open(whatsappUrl, "_blank");
-  };
+    // Platform detection
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isAndroid = /Android/.test(navigator.userAgent);
+    const isMobile = isIOS || isAndroid;
 
+    // Encode the message
+    const encodedMessage = encodeURIComponent(message);
+
+    if (isMobile) {
+      // For mobile devices, try app first with proper deep linking
+      let appUrl, webUrl;
+
+      if (isIOS) {
+        appUrl = `whatsapp://send?phone=+2349081893000&text=${encodedMessage}`;
+        webUrl = `https://api.whatsapp.com/send?phone=2349081893000&text=${encodedMessage}`;
+      } else {
+        appUrl = `intent://send?phone=+2349081893000&text=${encodedMessage}#Intent;scheme=whatsapp;package=com.whatsapp;end`;
+        webUrl = `https://api.whatsapp.com/send?phone=2349081893000&text=${encodedMessage}`;
+      }
+
+      // Try to open the app
+      const startTime = Date.now();
+      window.location.href = appUrl;
+
+      // Fallback to web if app doesn't open
+      const checkAppOpened = () => {
+        if (Date.now() - startTime > 2500) {
+          window.open(webUrl, "_blank");
+        }
+      };
+
+      // Set fallback timer and store the timer ID
+      const timerId = setTimeout(checkAppOpened, 2500);
+
+      // Also listen for page visibility change (app opened successfully)
+      document.addEventListener(
+        "visibilitychange",
+        () => {
+          if (document.hidden) {
+            clearTimeout(timerId);
+          }
+        },
+        { once: true }
+      );
+    } else {
+      // For desktop, use the API endpoint which works better
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=2349081893000&text=${encodedMessage}`;
+      window.open(whatsappUrl, "_blank");
+    }
+  };
   const toggleFAQ = (index: number) => {
     setOpenFAQ(openFAQ === index ? null : index);
   };

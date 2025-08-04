@@ -212,8 +212,7 @@ export default function RootLayout({
       <head>
         {/* Facebook Pixel Script */}
         <Script id="fb-pixel" strategy="afterInteractive">
-          {`
-            !function(f,b,e,v,n,t,s)
+          {`!function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
             if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -221,9 +220,11 @@ export default function RootLayout({
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
+    
             fbq('init', '672656989164693');
-            fbq('track', 'PageView');
-          `}
+            fbq('init', '1934633237302539');
+    
+            fbq('track', 'PageView');`}
         </Script>
       </head>
 

@@ -73,7 +73,7 @@ export default function Header() {
   return (
     <>
       {pathname !== "/apply" && pathname !== "/summerschool" && <Banner />}
-      <header className="sticky top-0 z-20 w-full border-b bg-transparent backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 left-0 z-20 w-full border-b bg-transparent backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             {pathname !== "/apply" && (
@@ -134,12 +134,12 @@ export default function Header() {
               className="flex items-center gap-2 font-bold text-xl relative "
             >
               {/* Logo transition */}
-              <span className="relative w-[150px] h-[50px] flex items-center">
+              <span className="relative w-[120px] h-[50px] flex items-center">
                 {/* Black logo */}
                 <Image
                   src={"/images/biroblack.svg"}
                   alt=""
-                  width={150}
+                  width={120}
                   height={50}
                   className={cn(
                     "absolute left-0  transition-all duration-500 ease-in-out",
@@ -154,7 +154,7 @@ export default function Header() {
                 <Image
                   src={"/images/birowhite.svg"}
                   alt=""
-                  width={150}
+                  width={120}
                   height={50}
                   className={cn(
                     "absolute left-0  transition-all duration-500 ease-in-out",

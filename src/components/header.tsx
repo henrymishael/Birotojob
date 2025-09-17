@@ -215,7 +215,7 @@ export default function Header() {
             ) : (
               <Link
                 target="_blank"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdIlGbYjokRTIbGjEZyDahwzAHYNq5dNGryhQqvRHjXnc7_nA/viewform?usp=header"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfXTG_TMdKOSIjwgYRoYtJGiCBTX2HGjCrm0DUKB6U7V7EbtQ/viewform?usp=header"
               >
                 <Button>Enroll Now</Button>
               </Link>

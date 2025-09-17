@@ -30,8 +30,8 @@ export const allCourses = [
     duration: "10 weeks",
     level: "Beginner to Junior",
     price: "₦175,000",
-    virtual: "₦75,000",
-    startDate: "June 15, 2025",
+    virtual: "₦175,000",
+    startDate: "October 5, 2025",
     instructor: ["Engr. Solomon"],
     topics: ["HTML/CSS", "JavaScript", "React", "Next JS"],
     prerequisites: [
@@ -93,9 +93,9 @@ export const allCourses = [
     duration: "10 weeks",
     level: "Beginner to Intermediate",
     price: "₦175,000",
-    virtual: "₦75,000",
+    virtual: "₦175,000",
 
-    startDate: "July 10, 2025",
+    startDate: "October 5, 2025",
     instructor: "Glory Ijiobor",
     topics: [
       "Excel",
@@ -198,9 +198,9 @@ export const allCourses = [
     duration: "10 weeks",
     level: "Intermediate",
     price: "₦175,000",
-    virtual: "₦75,000",
+    virtual: "₦175,000",
 
-    startDate: "July 10, 2025",
+    startDate: "October 5, 2025",
     instructor: "Engineer Solomon",
     topics: [
       "Python",
@@ -302,9 +302,9 @@ export const allCourses = [
     duration: "10 weeks",
     level: "Beginner",
     price: "₦175,000",
-    virtual: "₦75,000",
+    virtual: "₦175,000",
 
-    startDate: "May 20, 2025",
+    startDate: "October 5, 2025",
     instructor: "Blessing Praise",
     topics: [
       "User Research",
@@ -407,9 +407,9 @@ export const allCourses = [
     duration: "10 weeks",
     level: "Beginner",
     price: "₦175,000",
-    virtual: "₦75,000",
+    virtual: "₦175,000",
 
-    startDate: "May 5, 2025",
+    startDate: "October 5, 2025",
     instructor: "Akpan Michael",
     topics: [
       "Computer Basics",
@@ -515,9 +515,9 @@ export const allCourses = [
     duration: "10 weeks",
     level: "Intermediate",
     price: "₦350,000",
-    virtual: "₦175,000",
+    virtual: "₦350,000",
 
-    startDate: "August 5, 2025",
+    startDate: "October 5, 2025",
     instructor: "Mrs Chisom Amuka",
     topics: [
       "Network Security",
@@ -619,9 +619,9 @@ export const allCourses = [
     duration: "9 weeks",
     level: "Beginner to Intermediate",
     price: "₦175,000",
-    virtual: "₦75,000",
+    virtual: "₦175,000",
 
-    startDate: "September 2, 2025",
+    startDate: "October 5, 2025",
     instructor: "Mrs Chisom Amuka",
     topics: [
       "Project Planning",
@@ -723,7 +723,7 @@ export const allCourses = [
     duration: "10 weeks",
     level: "Beginner to Intermediate",
     price: "₦175,000",
-    startDate: "September 16, 2025",
+    startDate: "October 5, 2025",
     instructor: "Kingsley Olise",
     topics: [
       "Design Principles",

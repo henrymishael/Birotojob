@@ -63,7 +63,7 @@ export default function Home() {
 
       toast.success(
         <>
-          <div className='font-bold text-green-700 mb-1'>
+          <div className="font-bold text-green-700 mb-1">
             Application Submitted Successfully!
           </div>
           <div>
@@ -88,7 +88,7 @@ export default function Home() {
       console.error("Error submitting form:", error);
       toast.error(
         <div>
-          <div className='font-bold text-red-700 mb-1'>Submission Error</div>
+          <div className="font-bold text-red-700 mb-1">Submission Error</div>
           <div>
             There was a problem submitting your application. Please try again.
           </div>
@@ -101,57 +101,57 @@ export default function Home() {
 
   return (
     <>
-      <main className=' min-h-screen  bg-gray-50  dark:bg-slate-900'>
-        <div className='container mx-auto px-4 py-12 max-w-4xl'>
+      <main className=" min-h-screen  bg-gray-50  dark:bg-slate-900">
+        <div className="container mx-auto px-4 py-12 max-w-4xl">
           {/* Hero Section */}
-          <section className='text-center mb-12' aria-labelledby='hero-heading'>
-            <div className='text-blue-700 dark:text-blue-400 font-bold text-xl tracking-wide mb-8'>
+          <section className="text-center mb-12" aria-labelledby="hero-heading">
+            <div className="text-blue-700 dark:text-blue-400 font-bold text-xl tracking-wide mb-8">
               Birotojob Academy™
             </div>
 
             <h1
-              id='hero-heading'
-              className='text-5xl md:text-6xl font-bold text-slate-800 dark:text-white mb-8 leading-tight'
+              id="hero-heading"
+              className="text-5xl md:text-6xl font-bold text-slate-800 dark:text-white mb-8 leading-tight"
             >
               Learn{" "}
-              <span className='text-orange-500 dark:text-orange-400'>
+              <span className="text-orange-500 dark:text-orange-400">
                 Tech Courses
               </span>{" "}
               &amp; Professional Development
             </h1>
 
-            <div className='text-gray-700 dark:text-gray-300 text-xl mb-8 max-w-3xl mx-auto leading-relaxed'>
-              <p className='mb-4'>
+            <div className="text-gray-700 dark:text-gray-300 text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="mb-4">
                 Master the most in-demand technology skills of the modern era
                 and become globally sought-after in the tech industry. Join
                 thousands of successful graduates who transformed their careers
                 through our comprehensive programming bootcamp and coding
                 courses.
               </p>
-              <p className='font-semibold text-slate-800 dark:text-white text-lg'>
-                <span className='text-blue-700 dark:text-blue-400'>
+              <p className="font-semibold text-slate-800 dark:text-white text-lg">
+                <span className="text-blue-700 dark:text-blue-400">
                   Frontend Web Development
                 </span>
                 ,{" "}
-                <span className='text-blue-700 dark:text-blue-400'>
+                <span className="text-blue-700 dark:text-blue-400">
                   Data Science &amp; Machine Learning
                 </span>
                 ,{" "}
-                <span className='text-blue-700 dark:text-blue-400'>
+                <span className="text-blue-700 dark:text-blue-400">
                   Data Analysis and visualization
                 </span>
                 ,{" "}
-                <span className='text-blue-700 dark:text-blue-400'>
+                <span className="text-blue-700 dark:text-blue-400">
                   ICT Fundamentals
                 </span>
                 ,{" "}
-                <span className='text-blue-700 dark:text-blue-400'>
+                <span className="text-blue-700 dark:text-blue-400">
                   Cybersecurity
                 </span>
               </p>
             </div>
             <Button
-              className='bg-blue-700 dark:bg-blue-500 hover:bg-blue-800 dark:hover:bg-blue-600 text-white lg:px-12 py-4 text-xl rounded-full shadow-lg transform hover:scale-105 transition-all duration-200 mb-6'
+              className="bg-blue-700 dark:bg-blue-500 hover:bg-blue-800 dark:hover:bg-blue-600 text-white lg:px-12 py-4 text-xl rounded-full shadow-lg transform hover:scale-105 transition-all duration-200 mb-6"
               onClick={() => {
                 const formSection = document.getElementById("apply");
                 if (formSection) {
@@ -162,24 +162,24 @@ export default function Home() {
               Click Now To Register
             </Button>
 
-            <div className='mb-8'>
-              <p className='text-green-600 dark:text-green-400 font-bold text-2xl mb-6'>
+            <div className="mb-8">
+              <p className="text-green-600 dark:text-green-400 font-bold text-2xl mb-6">
                 Graduate with Industry-Recognized Tech Certifications
               </p>
-              <div className='bg-white dark:bg-slate-800 rounded-lg shadow-md p-6 max-w-md mx-auto'>
-                <p className='text-gray-600 dark:text-gray-300 font-semibold mb-3'>
+              <div className="bg-white dark:bg-slate-800 rounded-lg shadow-md p-6 max-w-md mx-auto">
+                <p className="text-gray-600 dark:text-gray-300 font-semibold mb-3">
                   Accredited &amp; Certified By:
                 </p>
-                <div className='flex flex-wrap justify-center gap-12 items-center'>
+                <div className="flex flex-wrap justify-center gap-12 items-center">
                   {partners.map((partner, index) => (
                     <div
                       key={index}
-                      className=' flex flex-col gap-2 items-center  transition-all'
+                      className=" flex flex-col gap-2 items-center  transition-all"
                     >
                       <Image
                         src={partner.logo}
                         alt={`Partner ${index + 1}`}
-                        className='object-contain'
+                        className="object-contain"
                         width={100}
                         height={100}
                       />
@@ -197,64 +197,64 @@ export default function Home() {
 
           {/* Features Section */}
           <section
-            id='about'
-            className='mb-16'
-            aria-labelledby='features-heading'
+            id="about"
+            className="mb-16"
+            aria-labelledby="features-heading"
           >
             <h2
-              id='features-heading'
-              className='text-3xl font-bold text-center text-slate-800 dark:text-white mb-12'
+              id="features-heading"
+              className="text-3xl font-bold text-center text-slate-800 dark:text-white mb-12"
             >
               Why Choose Our Tech Education Platform?
             </h2>
-            <div className='grid md:grid-cols-3 gap-8'>
-              <article className='text-center p-6 bg-white dark:bg-slate-800 rounded-lg shadow-md'>
-                <div className='w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4'>
+            <div className="grid md:grid-cols-3 gap-8">
+              <article className="text-center p-6 bg-white dark:bg-slate-800 rounded-lg shadow-md">
+                <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span
-                    className='text-blue-700 dark:text-blue-400 text-2xl'
-                    aria-hidden='true'
+                    className="text-blue-700 dark:text-blue-400 text-2xl"
+                    aria-hidden="true"
                   >
                     🎓
                   </span>
                 </div>
-                <h3 className='font-bold text-lg text-slate-800 dark:text-white mb-2'>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-2">
                   Expert Instructors
                 </h3>
-                <p className='text-gray-600 dark:text-gray-300'>
+                <p className="text-gray-600 dark:text-gray-300">
                   Learn from industry professionals with years of real-world
                   experience at top tech companies
                 </p>
               </article>
-              <article className='text-center p-6 bg-white dark:bg-slate-800 rounded-lg shadow-md'>
-                <div className='w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4'>
+              <article className="text-center p-6 bg-white dark:bg-slate-800 rounded-lg shadow-md">
+                <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span
-                    className='text-blue-700 dark:text-blue-400 text-2xl'
-                    aria-hidden='true'
+                    className="text-blue-700 dark:text-blue-400 text-2xl"
+                    aria-hidden="true"
                   >
                     💻
                   </span>
                 </div>
-                <h3 className='font-bold text-lg text-slate-800 dark:text-white mb-2'>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-2">
                   Hands-On Projects
                 </h3>
-                <p className='text-gray-600 dark:text-gray-300'>
+                <p className="text-gray-600 dark:text-gray-300">
                   Build real-world applications and portfolio projects that
                   showcase your programming skills to potential employers
                 </p>
               </article>
-              <article className='text-center p-6 bg-white dark:bg-slate-800 rounded-lg shadow-md'>
-                <div className='w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4'>
+              <article className="text-center p-6 bg-white dark:bg-slate-800 rounded-lg shadow-md">
+                <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span
-                    className='text-blue-700 dark:text-blue-400 text-2xl'
-                    aria-hidden='true'
+                    className="text-blue-700 dark:text-blue-400 text-2xl"
+                    aria-hidden="true"
                   >
                     🚀
                   </span>
                 </div>
-                <h3 className='font-bold text-lg text-slate-800 dark:text-white mb-2'>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-2">
                   Career Support &amp; Job Placement
                 </h3>
-                <p className='text-gray-600 dark:text-gray-300'>
+                <p className="text-gray-600 dark:text-gray-300">
                   Get comprehensive job placement assistance, resume reviews,
                   and career guidance after completing your coding bootcamp
                 </p>
@@ -264,29 +264,29 @@ export default function Home() {
 
           {/* Courses Section */}
           <section
-            id='courses'
-            className='mb-16'
-            aria-labelledby='courses-heading'
+            id="courses"
+            className="mb-16"
+            aria-labelledby="courses-heading"
           >
             <h2
-              id='courses-heading'
-              className='text-3xl font-bold text-center text-slate-800 dark:text-white mb-12'
+              id="courses-heading"
+              className="text-3xl font-bold text-center text-slate-800 dark:text-white mb-12"
             >
               Our Comprehensive Tech Course Catalog
             </h2>
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {allCourses.map((course, index) => (
                 <article
                   key={index}
-                  className='bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-slate-700'
+                  className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-slate-700"
                 >
-                  <h3 className='font-bold text-lg text-slate-800 dark:text-white mb-3'>
+                  <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-3">
                     {course.title}
                   </h3>
-                  <p className='text-gray-600 dark:text-gray-300 mb-4'>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
                     {course.description}
                   </p>
-                  <div className='flex flex-col gap-2 text-sm text-blue-700 dark:text-blue-400 font-medium'>
+                  <div className="flex flex-col gap-2 text-sm text-blue-700 dark:text-blue-400 font-medium">
                     <span>Duration: {course.duration}</span>
                     <span>Level: {course.level}</span>
                     <span>Price: {course.price}</span>
@@ -298,37 +298,37 @@ export default function Home() {
 
           {/* Virtual Classroom Section */}
           <section
-            className='text-center mb-16'
-            aria-labelledby='classroom-heading'
+            className="text-center mb-16"
+            aria-labelledby="classroom-heading"
           >
             <h2
-              id='classroom-heading'
-              className='text-3xl font-bold text-slate-800 dark:text-white mb-8'
+              id="classroom-heading"
+              className="text-3xl font-bold text-slate-800 dark:text-white mb-8"
             >
               Interactive Online Learning Experience
             </h2>
-            <Card className='inline-block max-w-lg mx-auto shadow-lg bg-white dark:bg-slate-800'>
-              <CardContent className='p-6'>
-                <div className='relative'>
+            <Card className="inline-block max-w-lg mx-auto shadow-lg bg-white dark:bg-slate-800">
+              <CardContent className="p-6">
+                <div className="relative">
                   <Image
-                    src='/images/class3.jpg'
-                    alt='Live virtual programming classes with interactive coding environment and instructor-led sessions'
+                    src="/images/class3.jpg"
+                    alt="Live virtual programming classes with interactive coding environment and instructor-led sessions"
                     width={500}
                     height={350}
-                    className='rounded-lg w-full'
+                    className="rounded-lg w-full"
                     priority
                   />
-                  <div className='mt-6 text-left'>
-                    <h3 className='font-bold text-xl text-slate-800 dark:text-white mb-3 flex items-center'>
+                  <div className="mt-6 text-left">
+                    <h3 className="font-bold text-xl text-slate-800 dark:text-white mb-3 flex items-center">
                       <span
-                        className='text-green-500 dark:text-green-400 mr-2'
-                        aria-hidden='true'
+                        className="text-green-500 dark:text-green-400 mr-2"
+                        aria-hidden="true"
                       >
                         ●
                       </span>
                       Live Virtual Programming Classes (Join From Anywhere)
                     </h3>
-                    <p className='text-gray-700 dark:text-gray-300 leading-relaxed'>
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                       Experience the advantage of instructor-led live virtual
                       coding classes with interactive learning environments.
                       Collaborate with fellow students in our cohort-based
@@ -337,8 +337,8 @@ export default function Home() {
                       experts. Our state-of-the-art virtual classroom technology
                       ensures an engaging and immersive tech education
                       experience from anywhere in the world.
-                      <p className='font-bold '>
-                        Virtual classes are ₦75,000 for all courses
+                      <p className="font-bold ">
+                        Virtual classes are ₦175,000 for all courses
                       </p>
                     </p>
                   </div>
@@ -349,19 +349,19 @@ export default function Home() {
 
           {/* Stats Section */}
           <section
-            className='bg-blue-700 dark:bg-blue-500 text-white rounded-lg p-8 mb-16'
-            aria-labelledby='stats-heading'
+            className="bg-blue-700 dark:bg-blue-500 text-white rounded-lg p-8 mb-16"
+            aria-labelledby="stats-heading"
           >
             <h2
-              id='stats-heading'
-              className='text-2xl font-bold text-center mb-8'
+              id="stats-heading"
+              className="text-2xl font-bold text-center mb-8"
             >
               Our Track Record of Success
             </h2>
-            <div className='grid md:grid-cols-3 gap-6 text-center'>
+            <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
-                <div className='text-3xl font-bold mb-2'>100+</div>
-                <div className='text-blue-100 dark:text-blue-200'>
+                <div className="text-3xl font-bold mb-2">100+</div>
+                <div className="text-blue-100 dark:text-blue-200">
                   Tech Graduates Placed
                 </div>
               </div>
@@ -372,14 +372,14 @@ export default function Home() {
                 </div>
               </div> */}
               <div>
-                <div className='text-3xl font-bold mb-2'>50+</div>
-                <div className='text-blue-100 dark:text-blue-200'>
+                <div className="text-3xl font-bold mb-2">50+</div>
+                <div className="text-blue-100 dark:text-blue-200">
                   Industry Partners
                 </div>
               </div>
               <div>
-                <div className='text-3xl font-bold mb-2'>4.9/5</div>
-                <div className='text-blue-100 dark:text-blue-200'>
+                <div className="text-3xl font-bold mb-2">4.9/5</div>
+                <div className="text-blue-100 dark:text-blue-200">
                   Student Rating
                 </div>
               </div>
@@ -387,14 +387,14 @@ export default function Home() {
           </section>
 
           {/* FAQ Section */}
-          <section className='mb-16' aria-labelledby='faq-heading'>
+          <section className="mb-16" aria-labelledby="faq-heading">
             <h2
-              id='faq-heading'
-              className='text-3xl font-bold text-center text-slate-800 dark:text-white mb-12'
+              id="faq-heading"
+              className="text-3xl font-bold text-center text-slate-800 dark:text-white mb-12"
             >
               Frequently Asked Questions About Our Bootcamp
             </h2>
-            <div className='max-w-3xl mx-auto space-y-6'>
+            <div className="max-w-3xl mx-auto space-y-6">
               {[
                 {
                   q: "What programming languages will I learn in the bootcamp?",
@@ -415,12 +415,12 @@ export default function Home() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className='bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md'
+                  className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md"
                 >
-                  <summary className='font-semibold text-slate-800 dark:text-white cursor-pointer hover:text-blue-700 dark:hover:text-blue-400'>
+                  <summary className="font-semibold text-slate-800 dark:text-white cursor-pointer hover:text-blue-700 dark:hover:text-blue-400">
                     {faq.q}
                   </summary>
-                  <p className='mt-4 text-gray-600 dark:text-gray-300 leading-relaxed'>
+                  <p className="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed">
                     {faq.a}
                   </p>
                 </details>
@@ -430,122 +430,122 @@ export default function Home() {
 
           {/* Application Form */}
           <section
-            id='apply'
-            className='max-w-3xl mx-auto'
-            aria-labelledby='application-heading'
+            id="apply"
+            className="max-w-3xl mx-auto"
+            aria-labelledby="application-heading"
           >
-            <Card className='shadow-xl bg-transparent md:bg-white md:dark:bg-slate-800'>
-              <CardContent className='p-10'>
-                <div className='text-center mb-8'>
+            <Card className="shadow-xl bg-transparent md:bg-white md:dark:bg-slate-800">
+              <CardContent className="p-10">
+                <div className="text-center mb-8">
                   <h2
-                    id='application-heading'
-                    className='text-3xl font-bold text-slate-800 dark:text-white mb-4'
+                    id="application-heading"
+                    className="text-3xl font-bold text-slate-800 dark:text-white mb-4"
                   >
                     Start Your Tech Career Journey Today
                   </h2>
-                  <p className='text-gray-600 dark:text-gray-300 text-lg'>
+                  <p className="text-gray-600 dark:text-gray-300 text-lg">
                     Complete the application form below to secure your spot in
                     our next programming bootcamp cohort
                   </p>
                 </div>
 
-                <form className='space-y-8' onSubmit={handleSubmit} noValidate>
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-                    <div className='space-y-2'>
+                <form className="space-y-8" onSubmit={handleSubmit} noValidate>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
                       <Label
-                        htmlFor='firstName'
-                        className='text-sm font-semibold text-gray-700 dark:text-gray-200'
+                        htmlFor="firstName"
+                        className="text-sm font-semibold text-gray-700 dark:text-gray-200"
                       >
                         First Name *
                       </Label>
                       <Input
-                        id='firstName'
-                        name='firstName'
+                        id="firstName"
+                        name="firstName"
                         value={formData.firstName}
                         onChange={handleChange}
-                        placeholder='Enter your first name'
-                        className='h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white'
+                        placeholder="Enter your first name"
+                        className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white"
                         required
-                        aria-describedby='firstName-error'
+                        aria-describedby="firstName-error"
                       />
                     </div>
-                    <div className='space-y-2'>
+                    <div className="space-y-2">
                       <Label
-                        htmlFor='lastName'
-                        className='text-sm font-semibold text-gray-700 dark:text-gray-200'
+                        htmlFor="lastName"
+                        className="text-sm font-semibold text-gray-700 dark:text-gray-200"
                       >
                         Last Name *
                       </Label>
                       <Input
-                        id='lastName'
-                        name='lastName'
+                        id="lastName"
+                        name="lastName"
                         value={formData.lastName}
                         onChange={handleChange}
-                        placeholder='Enter your last name'
-                        className='h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white'
+                        placeholder="Enter your last name"
+                        className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white"
                         required
-                        aria-describedby='lastName-error'
+                        aria-describedby="lastName-error"
                       />
                     </div>
                   </div>
 
-                  <div className='space-y-2'>
+                  <div className="space-y-2">
                     <Label
-                      htmlFor='email'
-                      className='text-sm font-semibold text-gray-700 dark:text-gray-200'
+                      htmlFor="email"
+                      className="text-sm font-semibold text-gray-700 dark:text-gray-200"
                     >
                       Email Address *
                     </Label>
                     <Input
-                      id='email'
-                      name='email'
-                      type='email'
+                      id="email"
+                      name="email"
+                      type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder='Enter your professional email address'
-                      className='h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white'
+                      placeholder="Enter your professional email address"
+                      className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white"
                       required
-                      aria-describedby='email-error'
+                      aria-describedby="email-error"
                     />
                   </div>
 
-                  <div className='space-y-2'>
+                  <div className="space-y-2">
                     <Label
-                      htmlFor='phone'
-                      className='text-sm font-semibold text-gray-700 dark:text-gray-200'
+                      htmlFor="phone"
+                      className="text-sm font-semibold text-gray-700 dark:text-gray-200"
                     >
                       Phone Number *
                     </Label>
                     <Input
-                      id='phone'
-                      name='phone'
-                      type='tel'
+                      id="phone"
+                      name="phone"
+                      type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder='Enter your phone number with country code'
-                      className='h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white'
+                      placeholder="Enter your phone number with country code"
+                      className="h-12 border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 dark:bg-slate-900 dark:text-white"
                       required
-                      aria-describedby='phone-error'
+                      aria-describedby="phone-error"
                     />
                   </div>
 
-                  <div className='space-y-2'>
+                  <div className="space-y-2">
                     <Label
-                      htmlFor='course'
-                      className='text-sm font-semibold text-gray-700 dark:text-gray-200'
+                      htmlFor="course"
+                      className="text-sm font-semibold text-gray-700 dark:text-gray-200"
                     >
                       Preferred Tech Course *
                     </Label>
                     <select
-                      id='course'
-                      name='course'
+                      id="course"
+                      name="course"
                       value={formData.course}
                       onChange={handleChange}
-                      className='w-full h-12 px-4 border border-gray-300 dark:border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-blue-700 bg-white dark:bg-slate-900 dark:text-white'
+                      className="w-full h-12 px-4 border border-gray-300 dark:border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-blue-700 bg-white dark:bg-slate-900 dark:text-white"
                       required
-                      aria-describedby='course-error'
+                      aria-describedby="course-error"
                     >
-                      <option value=''>
+                      <option value="">
                         Select your preferred programming course
                       </option>
                       {allCourses.map((course) => (
@@ -556,84 +556,84 @@ export default function Home() {
                     </select>
                   </div>
 
-                  <div className='space-y-2'>
+                  <div className="space-y-2">
                     <Label
-                      htmlFor='experience'
-                      className='text-sm font-semibold text-gray-700 dark:text-gray-200'
+                      htmlFor="experience"
+                      className="text-sm font-semibold text-gray-700 dark:text-gray-200"
                     >
                       Current Programming Experience Level *
                     </Label>
                     <select
-                      id='experience'
-                      name='experience'
+                      id="experience"
+                      name="experience"
                       value={formData.experience}
                       onChange={handleChange}
-                      className='w-full h-12 px-4 border border-gray-300 dark:border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-blue-700 bg-white dark:bg-slate-900 dark:text-white'
+                      className="w-full h-12 px-4 border border-gray-300 dark:border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-blue-700 bg-white dark:bg-slate-900 dark:text-white"
                       required
-                      aria-describedby='experience-error'
+                      aria-describedby="experience-error"
                     >
-                      <option value=''>
+                      <option value="">
                         Select your current coding experience level
                       </option>
-                      <option value='complete-beginner'>
+                      <option value="complete-beginner">
                         Complete Beginner (No prior programming experience)
                       </option>
-                      <option value='some-knowledge'>
+                      <option value="some-knowledge">
                         Some Knowledge (Self-taught/Online coding courses)
                       </option>
-                      <option value='intermediate'>
+                      <option value="intermediate">
                         Intermediate (1-2 years programming experience)
                       </option>
-                      <option value='experienced'>
+                      <option value="experienced">
                         Experienced (3+ years, looking to upskill in new
                         technologies)
                       </option>
                     </select>
                   </div>
 
-                  <div className='space-y-2'>
+                  <div className="space-y-2">
                     <Label
-                      htmlFor='education'
-                      className='text-sm font-semibold text-gray-700 dark:text-gray-200'
+                      htmlFor="education"
+                      className="text-sm font-semibold text-gray-700 dark:text-gray-200"
                     >
                       Highest Education Level
                     </Label>
                     <select
-                      id='education'
-                      name='education'
+                      id="education"
+                      name="education"
                       value={formData.education}
                       onChange={handleChange}
-                      className='w-full h-12 px-4 border border-gray-300 dark:border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-blue-700 bg-white dark:bg-slate-900 dark:text-white'
-                      aria-describedby='education-help'
+                      className="w-full h-12 px-4 border border-gray-300 dark:border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-blue-700 bg-white dark:bg-slate-900 dark:text-white"
+                      aria-describedby="education-help"
                     >
-                      <option value=''>Select your education level</option>
-                      <option value='high-school'>High School Diploma</option>
-                      <option value='diploma'>
+                      <option value="">Select your education level</option>
+                      <option value="high-school">High School Diploma</option>
+                      <option value="diploma">
                         Technical Diploma/Certificate
                       </option>
-                      <option value='bachelors'>Bachelor&apos;s Degree</option>
-                      <option value='masters'>Master&apos;s Degree</option>
-                      <option value='phd'>PhD/Doctorate</option>
+                      <option value="bachelors">Bachelor&apos;s Degree</option>
+                      <option value="masters">Master&apos;s Degree</option>
+                      <option value="phd">PhD/Doctorate</option>
                     </select>
                   </div>
 
-                  <div className='space-y-2'>
+                  <div className="space-y-2">
                     <Label
-                      htmlFor='goals'
-                      className='text-sm font-semibold text-gray-700 dark:text-gray-200'
+                      htmlFor="goals"
+                      className="text-sm font-semibold text-gray-700 dark:text-gray-200"
                     >
                       Why do you want to Learn *
                     </Label>
                     <Textarea
-                      id='goals'
-                      name='goals'
+                      id="goals"
+                      name="goals"
                       value={formData.goals}
                       onChange={handleChange}
-                      placeholder='Tell us about your career goals, why you want to learn programming, and what you hope to achieve after completing our tech bootcamp...'
+                      placeholder="Tell us about your career goals, why you want to learn programming, and what you hope to achieve after completing our tech bootcamp..."
                       rows={5}
-                      className='border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 resize-none dark:bg-slate-900 dark:text-white'
+                      className="border-gray-300 dark:border-slate-600 focus:border-blue-700 focus:ring-blue-700 resize-none dark:bg-slate-900 dark:text-white"
                       required
-                      aria-describedby='goals-error'
+                      aria-describedby="goals-error"
                     />
                   </div>
 
@@ -673,18 +673,18 @@ export default function Home() {
                     </select>
                   </div> */}
 
-                  <div className='pt-4'>
+                  <div className="pt-4">
                     <Button
-                      type='submit'
+                      type="submit"
                       disabled={isSubmitting}
-                      className='w-full bg-blue-700 dark:bg-blue-500 hover:bg-blue-800 dark:hover:bg-blue-600 text-white py-4 text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200'
-                      aria-describedby='submit-help'
+                      className="w-full bg-blue-700 dark:bg-blue-500 hover:bg-blue-800 dark:hover:bg-blue-600 text-white py-4 text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-200"
+                      aria-describedby="submit-help"
                     >
                       {isSubmitting ? "Submitting..." : "Submit Application "}
                     </Button>
                     <p
-                      id='submit-help'
-                      className='text-center text-sm text-gray-500 dark:text-gray-400 mt-4'
+                      id="submit-help"
+                      className="text-center text-sm text-gray-500 dark:text-gray-400 mt-4"
                     >
                       By submitting this form, you agree to be contacted by our
                       admissions team regarding your tech education application.

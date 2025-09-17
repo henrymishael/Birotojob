@@ -20,9 +20,9 @@ function Banner() {
       <div className="whitespace-nowrap animate-marquee font-semibold text-sm flex items-center gap-2">
         <span>🎉</span>
         <span>
-          New! Summer Coding Class for Kids is now open for enrollment.{" "}
+          New! Last Cohort for 2025 is now open for enrollment.{" "}
           <a
-            href="/summerschool"
+            href="/apply"
             className="underline text-green-700 hover:text-green-900 ml-2"
           >
             Learn More & Enroll
